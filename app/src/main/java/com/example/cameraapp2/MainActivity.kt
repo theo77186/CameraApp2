@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             override fun onImageSaved(outputFileResults: ImageCapture.OutputFileResults) {
                 Log.i("camera", "photo written on " + outputFileResults.savedUri.toString())
                 Looper.prepare()
-                Toast.makeText(this@MainActivity, "photo written on " + outputFileResults.savedUri.toString(), Toast.LENGTH_SHORT)
+                Toast.makeText(this@MainActivity, "photo written on " + outputFileResults.savedUri.toString(), Toast.LENGTH_SHORT).show()
                 //val intent = Intent().setAction(Intent.ACTION_VIEW).setData(outputFileResults.savedUri)
                 //startActivity(intent)
             }
